@@ -1,13 +1,26 @@
-import React from 'react'
-import './App.css'
-import './index.css'
+
+import React from 'react';
+import Home from './components/Home';
+import Header from './components/Header';
 
 const App = () => {
   return (
-    <div className="flex items-center w-full h-screen bg-[black] justify-center">
-      <div className="text-[100px] font-bold text-[aqua]">Tailwind CSS Template</div>
-    </div>
-  )
-}
 
-export default App
+<div>
+    <Home />
+    <Header />
+    </div>
+    /*<BrowserRouter>
+      <Header />
+      <nav>
+        <Link to="/home">Home</Link>
+        <Link to="/header">Header</Link>
+      </nav>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/header" element={<Header />} />
+      </Routes>
+    </BrowserRouter>*/
+  );
+}
+export default App;
